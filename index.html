@@ -14,10 +14,10 @@
             工作区==》暂存区==》远程仓库
         2.git操作具体步骤
             (1)cd 路径 进入当前目录
-            (2)配置git基本操作
+            (2)配置git基本操作[git中执行]
                 $ git config --global user.name "codesyc"
-
                 $ git config --global user.email "1263029361@qq.com"
+=============【终端中执行】=============
             (3)git init   进行初始化(建立暂存区)
                 .git 文件存储当前项目的所有版本信息
             (4)工作区==》暂存区
@@ -29,13 +29,25 @@
                 git checkout 文件名
             (7)查看工作区和暂存区版本
                 git diff
-            (8)查看查看已经提交到暂存区的历史版本
+            (8)查看已经提交到暂存区的历史版本
                 git log
             (9)恢复文件到指定的某一个版本
                 git reset --hard  版本号(5e6d12c08dfce0d3678e0e9b875384b13914374a)
+        3.暂存区==》远程仓库【生成ssh密匙】
+            (1)生成ssh密匙 [git中执行]
+                ssh-keygen -t rsa -C "githug邮箱"
+            (2)获取密匙：C:\Users\Administrator\.ssh\id_rsa.pub
+                ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFdRsPMjEuMX/GF3D9zqKu4/dzTvCoqLKxrS99muFppYHdt3+PuCww966nlGp6gVp4QTGYRRyMVVbnfNzD6UqLPolrumkncTstdeWO9EvRlifwYvT7VqaA2abCX1O9Eqxwbf9MlnSvZYbDG8G6e59ei3mOaHLFJxokS0cqTXZVmEzQE6Ad4/O4OCV1S++wiJJICPWIXrec/44nGik+26685PD/dXNv8qGGqwetsQR7pvr27EebqcqtI8L6QVZ17LEyhRzE4To8x0JYO8qZuXqN9g7jo2re7l1lYL4kydnt7hhdcPyV1KcaPiRJCSZIa/cg6SbsboAWFg7sZvSECjtL+tFpHvoFAYJLZHeMZwlWhhheRlz7kW1kAm/A/navIi9MNFZBhKITsfAbPs/IKh3+FF1YxgnuN2B9C7QAd5BOLWIEHBbS11z8EmVr66bQgNTktroQFztbLlukK+3KiHKG+x6LlhTHzpwdP2TB5Ls+Q6dh5OUjg0owS6aUB1Zi/iM= 1263029361@qq.com
+            (3)github配置密匙
+            (4)暂存区==》远程仓库【终端执行】
+                远程仓库地址：https://github.com/codesyc(你的账号)/(GitTest)你的项目名称.git
+               a. git remote add origin https://github.com/codesyc/GitTest.git
+               b. git push -u origin master
     -->
     <h1>helloWorld</h1>
     <h2>helloWorld</h2>
+
+    <h3>哈哈哈哈</h3>
 </body>
 
 </html>
